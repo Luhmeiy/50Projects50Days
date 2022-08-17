@@ -6,13 +6,12 @@
 * { box-sizing: border-box; }
   
 body {
-    background-color: #f6f7fb;
-    font-family: Arial, Helvetica, sans-serif;
-    display: flex;
     align-items: center;
-    justify-content: center;
+    background-color: #f6f7fb;
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
     height: 100vh;
-    overflow: hidden;
+    justify-content: center;
     margin: 0;
 }
   
@@ -21,47 +20,47 @@ body {
 .progress-container {
     display: flex;
     justify-content: space-between;
-    position: relative;
     margin-bottom: 30px;
+    position: relative;
     max-width: 100%;
     width: 350px;
 }
   
 .progress-container::before {
-    content: '';
     background-color: var(--line-border-empty);
+    content: '';
+    height: 4px;
+    left: 0;
     position: absolute;
     top: 50%;
-    left: 0;
     transform: translateY(-50%);
-    height: 4px;
     width: 100%;
     z-index: -1;
 }
   
 .progress {
     background-color: var(--line-border-fill);
+    height: 4px;
+    left: 0;
     position: absolute;
     top: 50%;
-    left: 0;
     transform: translateY(-50%);
-    height: 4px;
+    transition: 0.4s ease;
     width: 0%;
     z-index: -1;
-    transition: 0.4s ease;
 }
   
 .circle {
-    background-color: #fff;
-    color: #999;
-    border-radius: 50%;
-    height: 30px;
-    width: 30px;
-    display: flex;
     align-items: center;
-    justify-content: center;
+    background-color: #fff;
     border: 3px solid var(--line-border-empty);
+    border-radius: 50%;
+    color: #999;
+    display: flex;
+    height: 30px;
+    justify-content: center;
     transition: 0.4s ease;
+    width: 30px;
 }
   
 .circle.active {
@@ -71,16 +70,16 @@ body {
   
 .btn {
     background-color: var(--line-border-fill);
-    color: #fff;
     border: 0;
     border-radius: 6px;
+    color: white;
     cursor: pointer;
     font-family: inherit;
-    padding: 8px 30px;
-    margin: 5px;
     font-size: 14px;
     font-weight: bold;
     letter-spacing: .5px;
+    margin: 5px;
+    padding: 8px 30px;
 }
   
 .btn:active { transform: scale(0.98); }
