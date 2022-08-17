@@ -1,0 +1,44 @@
+* { box-sizing: border-box; }
+
+body {
+    align-items: center;
+    background-color: #E1E1E1;
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+    justify-content: center;
+    margin: 0;
+}
+
+#message {
+    background-color: #EEEEEE;
+    border: solid gray 1px;
+    box-shadow: 1px 1px 3px rgb(0 0 0 / 10%);
+    font-size: 25px;
+    padding: 20px;
+    text-align: center;
+}
+
+.key {
+    background-color: #EEEEEE;
+    border: solid gray 1px;
+    box-shadow: 1px 1px 3px rgb(0 0 0 / 10%);
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px;
+    padding: 20px;
+    position: relative;
+    text-align: center;
+    min-width: 150px;
+}
+
+.key p {
+    color: #555;
+    font-size: 14px;
+    left: 0;
+    margin: 0;
+    position: absolute;
+    top: -24px;
+    width: 100%;
+}

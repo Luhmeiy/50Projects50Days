@@ -1,0 +1,119 @@
+body {
+    background-color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.fas {
+    color: white;
+    font-size: 26px;
+}
+
+/* Start of Container */
+.container {
+    background-color: #f6f7fb;
+    min-height: 100vh;
+    padding: 40px;
+    transform-origin: top left;
+    transition: 0.5s linear;
+}
+
+.container.show-nav { transform: rotate(-20deg); }
+.container.show-nav .circle { transform: rotate(-70deg); }
+
+.container.show-nav + nav li {
+    transform: translateX(0);
+    transition-delay: 0.3s;
+}
+
+.circle-container {
+    left: 0;
+    margin-left: -100px;
+    margin-top: -100px;
+    position: fixed;
+    top: 0;
+}
+
+.circle {
+    background-color: #ff7979;
+    border-radius: 50%;
+    height: 200px;
+    position: relative;
+    transition: 0.5s linear;
+    width: 200px;
+}
+
+.circle button {
+    background-color: transparent;
+    border: none;
+    height: 100px;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+}
+
+.circle button i { cursor: pointer; }
+
+.circle button#close {
+    top: 60%;
+    transform: rotate(90deg);
+    transform-origin: top left;
+}
+
+.circle button#open { left: 60%; }
+
+.content {
+    margin: 50px auto;
+    max-width: 1000px;
+}
+
+.content h1 { margin-bottom: 0; }
+.content small { font-style: italic; }
+.content p { line-height: 150%; }
+.content img { width: 100%; }
+/* End of Container */
+
+/* Start of Navbar */
+nav {
+    bottom: 50px;
+    left: 0;
+    position: fixed;
+    z-index: 100;
+}
+
+nav ul li {
+    list-style: none;
+    transform: translateX(-100%);
+    transition: 0.4s ease-in;
+}
+
+nav ul li:not(:last-child) { margin-bottom: 25px; }
+
+nav ul li + li {
+    margin-left: 15px;
+    transform: translateX(-150%);
+}
+  
+nav ul li + li + li {
+    margin-left: 30px;
+    transform: translateX(-200%);
+}
+
+nav ul li i {
+    font-size: 20px;
+    margin-right: 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.6s ease-in;
+}
+
+nav ul li a:hover {
+    color: #ff7979;
+    font-weight: bold;
+}
+/* End of Navbar */

@@ -1,0 +1,46 @@
+body {
+    align-items: center;
+    background-color: #686de0;
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+    height: 100vh;
+    justify-content: center;
+    margin: 0;
+}
+
+.container {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 12px 20px -12px rgba(0, 0, 0, 0.35);
+    height: auto;
+    padding: 50px 20px;
+    text-align: center;
+    width: 800px;
+    max-width: 100%;
+}
+
+#top-text {
+    color: gray;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+}
+
+#joke {
+    font-size: 30px;
+    margin: 50px 13.5px;
+}
+
+#joke-btn {
+    background-color: #9F68E0;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 12px 20px -12px rgba(0, 0, 0, 0.35);
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 14px 40px;
+}
+
+#joke-btn:active { transform: scale(0.98); }
+#joke-btn:focus{ outline: none; }

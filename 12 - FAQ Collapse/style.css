@@ -1,0 +1,84 @@
+body {
+    align-items: center;
+    background-color: #f0f0f0;
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+    justify-content: center;
+    margin: 0;
+    text-align: center;
+}
+
+.FAQ {
+    border: solid lightgray 1px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    padding: 30px;
+    position: relative;
+    text-align: left;
+    transition: 0.5s ease;
+    width: 540px;
+}
+
+.FAQ.active {
+    background-color: white;
+    border: none;
+    box-shadow: 0 3px 5px gray;
+}
+
+.FAQ.active::before, .FAQ.active::after {
+    content: '\f075';
+    font-family: 'Font Awesome 6 Free';
+    color: #2ecc71;
+    font-size: 7rem;
+    position: absolute;
+    opacity: 0.2;
+    top: 20px;
+    left: 20px;
+    z-index: 0;
+}
+
+.FAQ.active::before {
+    color: #3498db;
+    top: -10px;
+    left: -30px;
+    transform: rotateY(180deg);
+}
+
+i.fa-angle-down { display: inline-block; }
+i.fa-xmark { display: none; }
+.FAQ.active i.fa-angle-down { display: none; }
+.FAQ.active i.fa-xmark { display: inline-block; }
+
+.FAQ p { 
+    display: none; 
+    margin: 30px 0 0;
+}
+
+.FAQ.active p { display: inline-block; }
+
+h3 { 
+    display: inline-block;
+    margin: 0;
+    width: 100%;
+}
+
+.fa-toggle {
+    align-items: center;
+    background-color: inherit;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    float: right;
+    font-size: 20px;
+    height: 30px;
+    justify-content: center;
+    width: 30px;
+}
+
+.FAQ.active .fa-toggle {
+    background-color: gray;
+    color: white;
+}

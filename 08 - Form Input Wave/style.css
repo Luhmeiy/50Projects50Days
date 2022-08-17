@@ -1,0 +1,78 @@
+body {
+    align-items: center;
+    background-color: steelblue;
+    color: white;
+    display: flex;
+    font-family: 'Mulish', sans-serif;
+    height: 100vh;
+    justify-content: center;
+    margin: 0;
+}
+
+.container {
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 5px;
+    padding: 20px 40px;
+    width: 300px;
+}
+
+h1 { text-align: center; }
+
+.form-group {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+label {
+    letter-spacing: 1px;
+    position: relative;
+    top: 36px;
+}
+
+input, label { display: block; }
+
+input {
+    background-color: transparent;
+    border: none;
+    border-bottom: solid white 2px;
+    color: white;
+    font-size: 18px;
+    height: 53px;
+    width: 100%;
+}
+
+input:first-of-type { margin-bottom: 20px; }
+
+input:focus,
+input:valid {
+    border-color: lightblue;
+    outline: none;
+}
+
+input:focus + label span,
+input:valid + label span {
+    color: lightblue;
+    transform: translateY(-30px);
+}
+
+span {
+    display: inline-block;
+    transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.login {
+    background-color: lightblue;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    margin: 25px 0;
+    padding: 15px;
+    width: 100%;
+}
+
+.login:active { transform: scale(0.98); }
+
+a {
+    color: lightblue;
+    text-decoration: none;
+}

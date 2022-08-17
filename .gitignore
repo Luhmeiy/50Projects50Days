@@ -1,0 +1,8 @@
+# Avoid Folders
+00 - JavaScript Event Listeners/
+100 - Default/
+
+#Avoid Files
+/index.html
+/script.js
+/style.css

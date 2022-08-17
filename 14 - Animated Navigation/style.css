@@ -1,0 +1,85 @@
+body, nav, ul {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+body {
+    background-image: linear-gradient(#eafbff 0%, #eafbff 50%,#5290f9 50%, #5290f9 100%);
+    font-family: 'Mulish', sans-serif;
+    height: 100vh;
+    margin: 0;
+}
+
+nav {
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgb(0 0 0 / 30%);
+    height: 30px;
+    padding: 20px;
+    transition: 0.6s linear;
+    width: 30px;
+}
+
+nav.active { width: 310px; }
+
+ul {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    transition: 0.6s linear;
+    width: 0;
+}
+
+.active ul { width: 100%; }
+
+li {
+    display: inline-block;
+    margin: 0 10px;
+    opacity: 0;
+    transform: rotateY(0deg);
+    transition: 0.6s linear;
+}
+
+li a {
+    color: rgb(93, 93, 93);
+    text-decoration: none;
+}
+
+.active li {
+    opacity: 1;
+    transform: rotateY(360deg);
+}
+
+#menu {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    height: 30px;
+    padding: 0;
+    position: relative;
+    width: 30px;
+}
+
+.line {
+    background-color: #5290f9;
+    height: 2px;
+    left: 5px;
+    position: absolute;
+    top: 10px;
+    transition: 0.6s linear;
+    width: 20px;
+}
+
+.line2 { 
+    bottom: 10px;
+    top: auto;
+}
+
+.active .line1 { 
+    transform: rotate(-765deg) translateY(5.5px); 
+}
+
+.active .line2 { 
+    transform: rotate(765deg) translateY(-5.5px);
+}

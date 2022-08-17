@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sound Board</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet"> 
+
+    <!-- CSS and JS -->
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <audio id="applause" src="audio/applause.mp3" ></audio>
+    <audio id="boo" src="audio/boo.mp3" ></audio>
+    <audio id="gasp" src="audio/gasp.mp3" ></audio>
+    <audio id="tada" src="audio/tada.mp3" ></audio>
+    <audio id="victory" src="audio/victory.mp3" ></audio>
+    <audio id="wrong" src="audio/wrong.mp3" >Your browser does not support the audio element.</audio>
+    <div class="container">
+        <button onclick="playAudio('applause')">applause</button>
+        <button onclick="playAudio('boo')">boo</button>
+        <button onclick="playAudio('gasp')">gasp</button>
+        <button onclick="playAudio('tada')">tada</button>
+        <button onclick="playAudio('victory')">victory</button>
+        <button onclick="playAudio('wrong')">wrong</button>
+    </div>
+</body>
+</html>

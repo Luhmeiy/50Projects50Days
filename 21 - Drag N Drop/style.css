@@ -1,0 +1,32 @@
+* { box-sizing: border-box; }
+
+body {
+    align-items: center;
+    background-color: steelblue;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    margin: 0;
+}
+
+.empty {
+    background-color: white;
+    border: solid black 3px;
+    height: 150px;
+    margin: 10px;
+    width: 150px;
+}
+
+.hovered {
+    background-color: #333;
+    border: dashed white 3px;
+}
+
+.drag {
+    background: url("https://source.unsplash.com/random/150x150");
+    cursor: grab;
+    height: 144px;
+    width: 144px;
+}
+
+.drag:active { cursor: grabbing; }

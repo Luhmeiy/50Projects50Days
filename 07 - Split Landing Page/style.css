@@ -1,0 +1,57 @@
+body {
+    background-color: #f6f7fb;
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+div {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    transition: 1s ease;
+    width: 50vw;
+}
+
+#PS5 {
+    background: url('https://cf.shopee.com.br/file/7382b8f43b7acd19c168f058faebc7c0')
+    no-repeat center center/cover;
+    box-shadow: inset 0 0 0 1000px rgba(87, 84, 236, 0.7);
+}
+
+#PS5:hover { width: 90vw; }
+
+#XBOXSX {
+    background: url('https://compass-ssl.xbox.com/assets/83/53/83534a33-0998-43dc-915a-4ec0a686d679.jpg')
+    no-repeat center center/cover;
+    box-shadow: inset 0 0 0 1000px rgba(43, 43, 43, 0.8);
+}
+
+#XBOXSX:hover { width: 90vw; }
+
+h1 {
+    color: white;
+    font-size: 65px;
+}
+
+button {
+    background-color: transparent;
+    border: solid 3px white;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 25px 75px;
+    text-transform: uppercase;
+}
+
+#XBOXSX button:hover {
+    background-color: rgba(28, 122, 28, 1);
+    border: solid 3px rgba(28, 122, 28, 1);
+}
+
+#PS5 button:hover {
+    background-color: rgba(87, 84, 236, 1);
+    border: solid 3px rgba(87, 84, 236, 1);
+}

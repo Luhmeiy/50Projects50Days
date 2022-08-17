@@ -1,0 +1,106 @@
+* { box-sizing: border-box; }
+
+body {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Heebo', sans-serif;
+    height: 100vh;
+    justify-content: center;
+    margin: 0;
+    text-align: center;
+    transition: 1s ease-in-out;
+}
+
+body.dark { 
+    background-color: black; 
+    color: white;
+}
+
+button {
+    background-color: black;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 8px 10px;
+    transition: 1s ease-in-out;
+}
+
+body.dark button {
+    background-color: white; 
+    color: black;
+}
+
+h1 { font-size: 60px; }
+h1, .date { margin: 0; }
+
+/* Start of Clock */
+.clock {
+    height: 300px;
+    position: relative;
+    width: 200px;
+}
+
+.hand {
+    background: black;
+    height: 3px;
+    position: absolute;
+    right: 50%;
+    top: 50%;
+    transform: rotate(90deg);
+    transform-origin: 100%;
+    transition: .8s ease-in-out;
+}
+
+body.dark .hand.hour-hand,
+body.dark .hand.min-hand,
+body.dark .hand.circle { 
+    background-color: white; 
+}
+
+.hand.circle {
+    border: solid red 3px;
+    border-radius: 50%;
+    height: 12px;
+    width: 12px;
+    z-index: 4;
+}
+
+.hand.hour-hand {
+    width: 60px;
+    z-index: 1;
+}
+  
+.hand.min-hand {
+    width: 80px;
+    z-index: 2;
+}
+  
+.hand.second-hand {
+    background-color: red;
+    width: 100px;
+    z-index: 3;
+}
+/* End of Clock */
+
+/* Start of Date */
+.date {
+    color: #aaa;
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.date span {
+    background-color: black;
+    border-radius: 50%;
+    color: white;
+    padding: 3px 5px;
+    transition: 1s ease-in-out;
+}
+
+body.dark .date span { 
+    background-color: white; 
+    color: black;
+}
+/* End of Date */
