@@ -1,0 +1,40 @@
+* { box-sizing: border-box; }
+
+body {
+    align-items: center;
+    background-color: rebeccapurple;
+    display: flex;
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+    justify-content: center;
+    margin: 0;
+}
+
+.show-notification {
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    color: rebeccapurple;
+    cursor: pointer;
+    font-family: inherit;
+    font-weight: bold;
+    padding: 15px 20px;
+}
+
+.notification-wrapper {
+    bottom: 15px;
+    position: absolute;
+    right: 15px;
+}
+
+.toast {
+    background-color: white;
+    border-radius: 5px;
+    margin: 15px 0;
+    padding: 15px 20px;
+    text-align: center;
+}
+
+.info { color: rebeccapurple; }
+.success { color: green; }
+.error { color: red; }
