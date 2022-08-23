@@ -1,0 +1,27 @@
+* { box-sizing: border-box; }
+
+body {
+    align-items: center;
+    background-color: darksalmon;
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+    height: 100vh;
+    justify-content: center;
+    margin: 0;
+}
+
+.speed {
+    background: rgba(0, 0, 0, 0.1);
+    bottom: 15px;
+    padding: 15px;
+    position: absolute;
+}
+
+input[type=number] {
+    background-color: darksalmon;
+    border: none;
+    font-size: 14px;
+    margin-left: 15px;
+    padding: 10px;
+    width: 60px;
+}
