@@ -1,0 +1,76 @@
+* { box-sizing: border-box; }
+
+body {
+    background-color: #7bdaf3;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+
+.hidden { display: none; }
+
+#add {
+    background-color: #9ec862;
+    border: none;
+    color: white;
+    cursor: pointer;
+    padding: 10px 15px;
+    position: fixed;
+    right: 15px;
+    top: 15px;
+    z-index: 1;
+}
+
+.notes {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    top: 61px;
+    width: 100%;
+}
+
+.note {
+    background-color: white;
+    box-shadow: 0 0 10px 4px rgba(0, 0, 0, .1);
+    min-height: 400px;
+    margin: 20px;
+    width: 400px;
+}
+
+/* Start of Toolbar */
+.nav {
+    background-color: #9ec862;
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+}
+
+.nav button {
+    background-color: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 10px;
+}
+
+#edit:hover { color: #7bdaf3; }
+#delete:hover { color: red; }
+/* End of Toolbar */
+
+/* Start of Main */
+.main { padding: 20px; }
+.main p { word-break: break-all; }
+
+.note textarea {
+    border: none;
+    font-family: inherit;
+    font-size: 16px;
+    min-height: 359px;
+    margin: 0;
+    padding: 36px 20px;
+    resize: vertical;
+    width: 400px;
+}
+
+.note textarea:focus { outline: none; }
+/* End of Main */
