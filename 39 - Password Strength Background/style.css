@@ -1,0 +1,73 @@
+* { box-sizing: border-box; }
+
+body {
+    align-items: center;
+    display: flex;
+    font-family: 'Open Sans', sans-serif;
+    height: 100vh;
+    justify-content: center;
+    margin: 0;
+    overflow: hidden;
+}
+
+h1 {
+    font-size: 29px;
+    font-weight: 400;
+    margin-block: 10px 0;
+}
+
+/* Start of Blur Image */
+.background {
+    background: url('https://images.unsplash.com/photo-1556745757-8d76bdb6984b') no-repeat center center/cover;
+    bottom: -20px;
+    filter: blur(20px);
+    left: -20px;
+    position: absolute;
+    right: -20px;
+    top: -20px;
+    z-index: -1;
+}
+/* End of Blur Image */
+
+/* Start of Password Strength Form */
+.password-strength {
+    background-color: white;
+    border-radius: 5px;
+    padding: 40px;
+}
+
+.password-strength p {
+    color: gray;
+    font-size: 13px;
+    margin: 5px;
+    text-align: center;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-block: 25px;
+}
+
+.form-group label { margin-bottom: 10px; }
+
+.form-group input {
+    border: solid 1px lightgray;
+    border-radius: 5px;
+    font-size: 15px;
+    height: 42px;
+    padding: 8px;
+}
+
+button[type=submit] {
+    background-color: black;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 16px;
+    padding: 10px;
+    width: 100%;
+}
+/* End of Password Strength Form */
