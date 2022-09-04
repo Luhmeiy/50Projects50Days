@@ -1,0 +1,77 @@
+* { box-sizing: border-box; }
+
+body {
+    align-items: center;
+    background-color: #f8f9fd;
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+    height: 100vh;
+    justify-content: center;
+    margin: 0;
+}
+
+h4 { margin: 0 0 5px; }
+
+.user-filter {
+    border-radius: 5px;
+    box-shadow: 0px 5px 10px -5px rgb(0, 0, 0, .5);
+    overflow: hidden;
+    width: 300px;
+}
+
+/* Start of Filter Header */
+.filter-header {
+    background-color: #3e57db;
+    color: white;
+    padding: 30px 20px;
+}
+
+.filter-header small { color: lightgray; }
+
+#search {
+    background-color: rgba(0, 0, 0, 0.3);
+    border: none;
+    border-radius: 25px;
+    color: white;
+    display: block;
+    font-family: inherit;
+    font-size: 14px;
+    margin-top: 15px;
+    padding: 10px 15px;
+    width: 100%;
+}
+
+#search:focus { outline: none; }
+/* End of Filter Header */
+
+/* Start of User List */
+.user-list {
+    list-style: none;
+    margin: 0;
+    max-height: 400px;
+    overflow-y: auto; 
+    padding: 0;
+}
+
+.user-list strong {
+    display: block;
+    margin: 40px;
+}
+
+.user {
+    border-bottom: solid 1px #eee;
+    display: flex;
+    padding: 20px;
+}
+
+.user.hidden { display: none; }
+
+.user img {
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+}
+
+.user-info { margin-left: 15px; }
+.user-info p { font-size: 12px; }
+/* End of User List */
