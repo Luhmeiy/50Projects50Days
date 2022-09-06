@@ -7,7 +7,7 @@ getData();
 search.addEventListener('input', () => searchUser(search.value));
 
 async function getData() {
-    const res        = await fetch('https://randomuser.me/api?results=50')
+    const res         = await fetch('https://randomuser.me/api?results=50')
     const { results } = await res.json();
 
     userList.innerHTML = '';
