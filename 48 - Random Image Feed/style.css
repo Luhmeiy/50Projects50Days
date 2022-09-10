@@ -1,0 +1,22 @@
+* { box-sizing: border-box; }
+
+body {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+.image-feed {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1000px;
+}
+
+.image-feed img {
+    height: 300px;
+    margin: 10px;
+    width: 300px;
+}
