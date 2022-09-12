@@ -1,0 +1,98 @@
+* { box-sizing: border-box; }
+
+body {
+    background-color: #516dff;
+    color: white;
+    font-family: 'Press Start 2P', cursive;
+    margin: 0;
+    overflow: hidden;
+    text-align: center;
+}
+
+/* Start of Screen 1 and 2 */
+.screen {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+}
+
+#play {
+    background-color: white;
+    border: none;
+    color: #516dff;
+    cursor: pointer;
+    font-family: inherit;
+    padding: 15px 20px;
+}
+
+.insect-selection { margin-top: 25px; }
+
+.favorite-insect {
+    background-color: transparent;
+    border: solid 2px white;
+    color: white;
+    cursor: pointer;
+    font-family: inherit;
+    height: 150px;
+    width: 150px;
+}
+
+.favorite-insect img {
+    height: 100px;
+    width: 100px;
+}
+
+.screen.up {
+    margin-top: -100vh;
+    transition: 1s ease-out;
+}
+/* End of Screen 1 and 2 */
+
+/* Start of Game */
+#game {
+    height: 100vh;
+    position: relative;
+}
+
+#time, #score {
+    position: absolute;
+    top: 20px;
+}
+
+#time  { left: 20px; }
+#score { right: 20px; }
+
+.insect {
+    cursor: pointer;
+    position: absolute;
+}
+
+.insect.caught {
+    scale: 0;
+    transition: .3s ease-in-out;
+}
+
+.insect img {
+    height: 100px;
+    width: 100px;
+}
+
+#message {
+    background-color: rgb(0, 0, 0, .5);
+    line-height: 1.5;
+    opacity: 0;
+    padding-block: 25px;
+    position: absolute;
+    top: -125px;
+    width: 100%;
+    z-index: 1;
+}
+
+#message.active {
+    opacity: 1;
+    top: 125px;
+    transition: .5s ease-in-out
+}
+/* End of Game */
