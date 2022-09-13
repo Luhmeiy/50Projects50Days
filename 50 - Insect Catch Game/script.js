@@ -27,11 +27,11 @@ function addInsect() {
     const insect = document.createElement("div");
     insect.classList.add("insect");
 
-    const x = Math.random() * (window.innerHeight - 200) + 100;
-    const y = Math.random() * (window.innerWidth - 200) + 100;
+    const x = Math.random() * (window.innerWidth - 200) + 100;
+    const y = Math.random() * (window.innerHeight - 200) + 100;
 
-    insect.style.top  = `${x}px`;
-    insect.style.left = `${y}px`;
+    insect.style.left = `${x}px`;
+    insect.style.top  = `${y}px`;
 
     insect.innerHTML = `<img src="${favInsect.src}" alt="${favInsect.alt}" style="transform: rotate(${Math.random() * 360}deg)">`;
 
