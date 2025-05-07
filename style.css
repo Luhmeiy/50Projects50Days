@@ -1,0 +1,31 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+button {
+    cursor: pointer;
+    font-size: 20px;
+    height: 70%;
+    position: absolute;
+    width: 125px;
+}
+
+#prev { left: 75px; }
+#next { right: 75px; }
+
+iframe {
+    height: 70%;
+    padding: 0 25px;
+    width: 80%;
+}
+
+ul {
+    columns: 5;
+    -webkit-columns: 5;
+    -moz-columns: 5;
+    text-align: left;
+}
